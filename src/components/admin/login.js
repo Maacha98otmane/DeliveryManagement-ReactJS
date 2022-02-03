@@ -27,8 +27,8 @@ const Login = (props) => {
                 toastr.warning(res.error,'Check Your Form !!',{positionClass:"toastr-bottom-left"})
             }else{
                toastr.info('Login Success ','Welcome',{positionClass:"toastr-bottom-left"})
-                localStorage.setItem('token-info',JSON.stringify(res.token))
-               props.history.push('/home') 
+                localStorage.setItem('token-info',JSON.stringify(res))
+               props.history.push('/admin/create') 
             }
             
         })

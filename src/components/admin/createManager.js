@@ -28,7 +28,7 @@ const createManager = (props) => {
                 toastr.warning(res.error,'Check Your Form !!',{positionClass:"toastr-bottom-left"})
             }else{
                toastr.success('Manager Created ','New Account',{positionClass:"toastr-bottom-left"})
-            props.history.push('/signin') 
+            props.history.push('/admin/home') 
             }
             
         })
@@ -59,14 +59,11 @@ const createManager = (props) => {
        
     )
   return (
-    <div className='container'>
     <div className="row">
         <div className="col-md-6 mx-auto mt-5">
                       {form()}
         </div>
     </div>
-
-</div>
   );
 }
 

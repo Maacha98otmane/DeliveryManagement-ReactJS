@@ -9,7 +9,7 @@ const Layout = ({title,description,className,children}) => {
       </div>
       <div className={className}>{children}</div>
   </div>
-  );
+  ); 
 }
 
 export default Layout;
